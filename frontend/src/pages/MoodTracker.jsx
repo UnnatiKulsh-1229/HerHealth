@@ -43,7 +43,7 @@ function MoodTracker() {
     });
 
     const response = await axios.post(
-      "http://localhost:5000/api/mood/save",
+        `${import.meta.env.VITE_API_URL}/api/mood/save`,
       {
         user_email: email,
         mood_date: today,

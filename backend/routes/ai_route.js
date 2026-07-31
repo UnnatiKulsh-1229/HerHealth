@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../middleware/upload");
-const {
+  const {
   chatWithAI,
   getChatHistory,
 } = require("../controllers/aiController");
